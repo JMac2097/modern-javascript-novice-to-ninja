@@ -1,27 +1,21 @@
-const form = document.querySelector('.signup-form');
-const feedback = document.querySelector('.feedback');
-const usernamePattern = /^[a-zA-Z]{6,12}$/;
 
-form.addEventListener('submit', e => {
-    e.preventDefault();
+const products = [
+    {name: 'mario', price: 20},
+    {name: 'luigi', price: 10},
+    {name: 'chun-li', price: 50},
+    {name: 'yoshi', price: 30},
+    {name: 'shaun', price: 70}
+];
 
-    const username = form.username.value;
+// const filtered = products.filter(product => product.price > 20);
 
-    if(usernamePattern.test(username)) {
-        feedback.textContent = 'That is a valid username';
-    } else {
-        feedback.textContent = 'Nope, that is not accepted';
-    }
-
-});
-
-form.username.addEventListener('keyup', e => {
-    
-    if(usernamePattern.test(e.target.value)) {
-        form.username.setAttribute('class', 'success');
-    } else {
-        form.username.setAttribute('class', 'error');
-    }
-});
+// const promos = filtered.map(product => {
+//     return `the ${product.name} is ${product.price / 2} pounds`
+// });
 
 
+const promos = products
+    .filter(product => product.price > 20)
+    .map(product => `the ${product.name} is ${product.price / 2} pounds`);
+
+console.log(promos);
