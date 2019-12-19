@@ -21,3 +21,8 @@
     font-size: 0.7ems;
     color: rgb(197, 196, 196);
 }
+
+.update-msg {
+    text-align: center;
+    margin: 20px auto;
+}
