@@ -1,0 +1,31 @@
+.tabs > ul {
+    padding: 0;
+}
+.tabs .trigger {
+    list-style-type: none;
+    padding: 10px;
+    background: #162ba5;
+    margin: 4px;
+    border-radius: 6px;
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: rgb(161, 126, 226);
+    transition: color 0.25s ease-in;
+}
+.tabs .trigger:hover {
+    color: white;
+}
+.tabs .trigger.active {
+    background: #162ba5;
+    color: white;
+}
+.tabs .content {
+    background: #fbfbfb;
+    padding: 10px 20px;
+    border-radius: 6px;
+    display: none;
+}
+.tabs .content.active {
+    display: block;
+}

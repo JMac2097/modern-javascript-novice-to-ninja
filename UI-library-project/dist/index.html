@@ -1,0 +1,92 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>UI Library</title>
+  <style>
+    body {
+      font-size: 1.5em;
+    }
+
+    .container {
+      margin: 40px;
+      margin-top: 60px;
+    }
+    button {
+      width: 200px;
+      background: #eee;
+      padding: 10px;
+      margin: 20px auto;
+      border: none;
+      border-radius: 4px;
+      font-size: 1em;
+      cursor: pointer;
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum aliquam aut sequi repellat sit perspiciatis nostrum
+      tempore adipisci illum exercitationem, mollitia voluptatem autem atque, iste, eius quisquam! Quas, maiores sit?
+      Lorem, ipsum dolor <span class="tooltip" data-message="I am a tooltip"> Numquam molestias facilis
+      </span> adipisicing elit. Numquam molestias facilis distinctio vero incidunt, est ipsam labore quis iure maiores
+      harum, in voluptatibus laudantium? Doloribus voluptas sit consequatur mollitia nemo?</p>
+
+    <h2>Services</h2>
+    <!-- Dropdowns -->
+    <div class="dropdown">
+      <div class="trigger">Awesome T-shirt designs</div>
+      <div class="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis aperiam consequatur molestiae enim quibusdam
+          temporibus illum atque rem quidem! Commodi, distinctio eligendi quod repudiandae expedita sed voluptatem neque
+          quos ipsum.</p>
+      </div>
+    </div>
+    <div class="dropdown">
+      <div class="trigger">Cool sticker printing</div>
+      <div class="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et possimus officia sapiente soluta quis tempore
+          ducimus, molestias doloribus aliquid voluptate commodi, suscipit eaque mollitia voluptatem illo laboriosam
+          voluptates ipsa! Dignissimos.</p>
+      </div>
+    </div>
+    <h2>More Information</h2>
+    <div class="tabs">
+      <ul>
+        <li class="trigger active" data-target="#about">About</li>
+        <li class="trigger" data-target="#delivery">Delivery info</li>
+        <li class="trigger" data-target="#returns">Returns Info</li>
+      </ul>
+      <div class="content active" id="about">
+        <h3>about</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores enim, veniam numquam optio reprehenderit
+          culpa suscipit delectus modi eum fugit tempora aliquid aliquam ea deleniti voluptates corrupti ducimus eius
+          necessitatibus!</p>
+      </div>
+      <div class="content" id="delivery">
+        <h3>delivery</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque eos debitis magni beatae. Dolores, velit
+          doloribus, at placeat eveniet nihil nulla cupiditate laboriosam sed culpa quo asperiores repellat iure amet!
+        </p>
+      </div>
+      <div class="content" id="returns">
+        <h3>returns</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quam labore animi commodi, illum veritatis
+          dolores eligendi eveniet obcaecati qui facere nisi est possimus reprehenderit itaque ut, officia magnam nemo?
+        </p>
+      </div>
+    </div>
+    <div>
+      <button class="snackbar-trigger">click me</button>
+    </div>
+  </div>
+
+  <script src="assets/bundle.js"></script>
+</body>
+
+</html>
